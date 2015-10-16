@@ -1,0 +1,26 @@
+{
+  "name": "n-captcha",
+  "version": "0.1.0",
+  "description": "nodejs captcha",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/struCoder/n-captcha.git"
+  },
+  "keywords": [
+    "captcha",
+    "canvas"
+  ],
+  "author": "zdwloveschina@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/struCoder/n-captcha/issues"
+  },
+  "homepage": "https://github.com/struCoder/n-captcha#readme",
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
+}
