@@ -1,6 +1,6 @@
 {
   "name": "n-captcha",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "nodejs captcha",
   "main": "captcha.js",
   "scripts": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/struCoder/n-captcha#readme",
   "dependencies": {
+    "canvas": "^1.2.10",
     "lodash": "^3.10.1"
   }
 }
