@@ -52,7 +52,7 @@ var ncaptcha = require('n-captcha');
 app.use(function(req, res, next) {
   if (req.url === '/captcha') {
     var options = {
-      beforReqEndHooks: function() {
+      beforReqEndHooks: function(verifyCode) {
         if (req.session) req.session.ncaptcha = verifyCode;
         //do something you need
       }
