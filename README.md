@@ -51,9 +51,13 @@ var app = express()();
 var ncaptcha = require('n-captcha');
 app.use(function(req, res, next) {
   if (req.url === '/captcha') {
-    var verifyCode = ncaptcha({}, res);
-    if (req.session) req.session.ncaptcha = verifyCode;
-    //do something you need
+    var options = {
+      beforReqEndHooks: function() {
+        if (req.session) req.session.ncaptcha = verifyCode;
+        //do something you need
+      }
+    }
+    var verifyCode = ncaptcha(options, res);
   }
   next();
 })
