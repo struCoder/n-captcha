@@ -2,7 +2,7 @@
   "name": "n-captcha",
   "version": "0.1.0",
   "description": "nodejs captcha",
-  "main": "index.js",
+  "main": "captcha.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
