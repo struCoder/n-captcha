@@ -58,8 +58,9 @@ app.use(function(req, res, next) {
       }
     }
     var verifyCode = ncaptcha(options, res);
+  } else {
+    next();
   }
-  next();
 })
 
 // route

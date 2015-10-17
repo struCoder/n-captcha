@@ -1,6 +1,6 @@
 {
   "name": "n-captcha",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "nodejs captcha",
   "main": "captcha.js",
   "scripts": {

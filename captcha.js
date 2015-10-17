@@ -55,8 +55,8 @@ function n_captcha(options, res) {
     ctx.setTransform(Math.random() * 0.5 + 1, Math.random() * 0.4, Math.random() * 0.4, Math.random() * 0.5 + 1, 30 * i + 20, 50);
     ctx.fillText(text.charAt(i), 0, 0);
   }
-  if (config.beforReqEndHooks){config.beforReqEndHooks(config.text)}
 
+  config.beforReqEndHooks && config.beforReqEndHooks(config.text);
   //stream
   var stream = canvas.createPNGStream();
   var bufArr = [];

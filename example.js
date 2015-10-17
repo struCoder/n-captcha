@@ -6,10 +6,10 @@ function listern(req, res) {
   var parseUrl = url.parse(req.url);
   if (parseUrl.pathname === '/captcha') {
     var beforReqEndHooks = function(t) {
-      console.log('...', t);
+      console.log('beforReqEndHooks: ', t);
     }
     var t = captcha({beforReqEndHooks: beforReqEndHooks}, res);
-    console.log(t)
+    console.log('run result: ', t)
   } else {
     res.end()
   }
